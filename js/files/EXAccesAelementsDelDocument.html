@@ -1,0 +1,79 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Nombres parells </title>
+  </head>
+  <body>
+      
+      <script>
+          
+          var ValRetornoTemporizador;
+
+function Inici() {
+    ValRetornoTemporizador = setInterval(MuestraTexto, 1000);
+}
+
+function MuestraTexto(param1) {
+    document.getElementById("res").innerHTML += "Hola ";
+
+    
+}
+
+function Para() {
+    clearInterval(ValRetornoTemporizador);
+}
+
+// part del codi per la paguina Acces a elements de document 
+ function ColorFonsP()
+{
+    var x = document.querySelectorAll("p.estil");
+   
+    for (var i=0 ;i<=x.length;i++)
+        {
+             x[i].style.backgroundColor = "red";
+        }
+}
+
+    
+      </script>
+      
+      <p>Prem el boto d'Inici per mostra la paraula "hola " ,per pausa per pausar l'efecte</p>
+
+
+<button onclick="Inici()">Inici</button> <button onclick="Para()">Pausa</button>
+
+<p id="res" class="quadretext"></p>
+        
+    <h3>ACCÉS ALS ELEMENTS HTML</h3>
+        <p>En aquest part aplicarem un estin als diferents parrafs que conte l'exemple , per tal de fer-ho accedirem al id de cada un dels parrafs per tal d'aplicar un estil sobre aquets . Utizant querySelectorAll sobre les parrafs de la clase estil.</p>
+        
+        
+<button onclick="ColorFonsP()">Canviar color paràgraf </button>
+        <br>
+      
+<div class="quadretext">
+    <br>
+    <p>L’ÀNIMA DE LES FLORS<p>
+
+    <p class="estil">Aquelles dues flors que hi ha posades
+    al mig del caminal,
+    qui és que les hi deu haver llençades?
+    Qui sia, tant si val.</p>
+
+    <p>Aquelles dues flors no estan pas tristes,
+    no, no: riuen al sol.
+    M’han encantat així que les he vistes
+    posades a morir, mes sense dol.</p>
+
+    <p class="estil">“Morirem aviat, lluny de la planta
+    -elles deuen pensar-;
+    mes ara nostre brill el poeta encanta,
+        i això mai morirà.”</p>
+    
+    <p>Joan Maragall.</p>
+  
+  </body>
+</html>

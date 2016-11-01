@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>HTML - Apunts Curs Aplicacions web</title>
+    <!--<link href="../css/Index.css" rel="stylesheet" />-->
+    <link href="../css/Paginatipus.css" rel="stylesheet" />
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script src="../js/files/funciones.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>APUNTS CURS APLICACIONS WEB</h1>
+            <p>Raimon Carbonell,</p>
+            <p>Albert Batlle,</p>
+            <p>Xavi Toyos,</p>
+            <p>Francesc Vargas</p>
+            <div id="logo"> <img src="../img/html.png" alt="HTML" class="logos"> <img src="../img/CSS3.png" alt="CCS" class="logos"> <img src="../img/js.png" alt="JS" class="logos"> <img src="../img/UI-UX-BlueGreen2.png" alt="Usabilitat" class="logos"> </div>
+        </header>
+        <nav id="menuV">
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <p>Tornar</p><img src="../img/tornar.jpg" class="imamenu" alt="tornar"></a>
+                </li>
+                <li>
+                    <p>HTML</p> <img src="../img/html.png" class="imamenu" alt="HTML">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="html1.html">Introducció</a></li>
+                            <li><a href="html2.html">Head i body</a></li>
+                            <li><a href="html3.html">Paràgrafs i canvis de línea</a></li>
+                            <li><a href="html4.html">Títols</a></li>
+                            <li><a href="html5.html">div i span</a></li>
+                            <li><a href="html6.html">Elements que donen format al text</a></li>
+                            <li><a href="html7.html">Elements estructurals</a></li>
+                            <li><a href="html8.html">Llistes</a></li>
+                            <li><a href="html9.html">Taules</a></li>
+                            <li><a href="html10.html">Enllaços</a></li>
+                            <li><a href="html11.html">Imatges</a></li>
+                            <li><a href="html12.html">Formularis</a></li>
+                            <li><a href="html13.html">Vídeo</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>CCS</p> <img src="../img/CSS3.png" class="imamenu" alt="CSS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="css1.html">Introducció</a></li>
+                            <li><a href="css2.html">Declaracions més utilitzades</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>JS</p> <img src="../img/js.png" class="imamenu" alt="JS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="JAVASCRIPT.html">Introducció</a></li>
+                            <li><a href="FInforUsuari.html">Funcions per donar informació a l'usuari</a></li>
+                            <li><a href="Fprompt.html">Funcions per obtenir dades</a></li>
+                            <li><a href="TiposDatos_Variables.html">Tipus de dades i variables</a></li>
+                            <li><a href="Operadors.html">Operadors: aritmètics, lògics, assignació i relacionals</a></li>
+                            <li><a href="ifElse.html">Estructures condicionals</a></li>
+                            <li><a href="while_for.html">Estructures iteratives</a></li>
+                            <li><a href="funcions.html">Funcions</a></li>
+                            <li><a href="Events.html">Esdeveniments</a></li>
+                            <li><a href="AccesAelementsDelDocument.html">Accés a elements del document</a></li>
+                            <li><a href="Canvas.html">Canvas</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>UI/UX </p> <img src="../img/UI-UX-BlueGreen2.png" class="imamenu" alt="UIUX">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="usabilitat.html">Usabilitat</a></li>
+                            <li><a href="accessibilitat.html">Accessibilitat</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>FUNCIONS</h2>
+            <p>Una funció és un conjunt de sentències que realitzen una tasca concreta.
+                <ul>
+                    <li>La declaració de la funció es realitza utilitzant la paraula reserva fuction seguit pel nom de la funció. El codi d'una funcio cal que estigui entre { }</li>
+                </ul>
+                <div class="quadre"> function PrimeraFuncio()
+                    <br> {
+                    <br> alert ("hola mon");// mostra un alert per pantalla
+                    <br> //amb el text hola mon
+                    <br> }
+                    <br> </div>
+                <ul>
+                    <li>Definir una funció no l'executa de forma automàtica . També cal incloure la crida de la funció per exemple PrimeraFuncio (); en el moment de codi que sigui necessari executar-la.</li>
+                    <li>Una funcio pot rebre paràmetres com arguments PrimeraFuncio( Num1 , Num2). Aquest han d'estar separats per comes . Aquests paràmetres també s'hauran d'incloure en el moment de la crida de la funcio. </li>
+                </ul>
+                <div class="quadre"> var num1=1;// declaracio e inicializaciò de les variables
+                    <br> var=num2=2;
+                    <br> var res= suma(mun1,num2); // crida de la funcio passant
+                    <br> //dos nombres con arguments ,
+                    <br> //el retorn d'aquesta funcio es guarda en la variable res .
+                    <br> function suma(num1,num2)
+                    <br> {
+                    <br> return num1+num2;// es fa la sentencia de la suma de
+                    <br> //num1+num2 i es retorna el valor
+                    <br> }
+                    <br> </div>
+                <ul>
+                    <li>En el codi que hi ha dins la funció hi ha la possibilitat que crear noves variables però aquestes només es podran utilitzar dins de la mateixa funció.</li>
+                    <li>Les funcions poden retornar un valor , per fer-ho cal indicar la variable o expressió al return , al executar aquesta sentència , retorna el valor i surt de la funció , en cas que hi haguí lienas per sota de la funció no s'executaran.</li>
+                </ul>
+                <p><a href="../js/files/ExSumaEnters.html" download="Funcio suma de nombres" title="Suma de nombres">Descarregar l'exemple</a></p>
+                <form>
+                    <fieldset>
+                        <legend>Suma de dos nombres enters utlitzant una funcion Suma ()</legend>
+                        <label>num1</label>
+                        <input type="number" id="num1">
+                        <label>num2</label>
+                        <input type="number" id="num2">
+                        <label>Resultat</label>
+                        <input type="text" id="res2">
+                        <input type="button" value="comprobar" onclick="Suma();"> </fieldset>
+                </form>
+                <br>
+                <a href="while_for.html" class="enrere" title="ESTRUCTURES ITERATIVES"><img src=../img/flechaIzda1.gif alt="ESTRUCTURES ITERATIVES"></a>
+                <a href="Events.html" class="endevant" title="ESDEVENIMENTS"><img src="../img/flechaDcha1.gif" alt="ESDEVENIMENTS"></a>
+        </main>
+        <footer>
+            <p>Albert Batlle
+                <br><a href="mailto:albert.batlle@gmail.com" target="_blank">albert.batlle@gmail.com</a></p>
+            <p>Raimon Carbonell
+                <br><a href="mailto:raimon12@gmail.com" target="_blank">raimon12@gmail.com</a></p>
+            <p>Xavi Toyos
+                <br><a href="mailto:xavi.toyos@gmail.com" target="_blank">xavi.toyos@gmail.com</a></p>
+            <p>Francesc Vargas
+                <br><a href="mailto:fravase76@gmail.com" target="_blank">fravase76@gmail.com</a></p>
+            <br>
+            <p>© Barcelona, 2016</p>
+        </footer>
+    </div>
+</body>
+
+</html>

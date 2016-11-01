@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>JavaScript - Apunts Curs Aplicacions web</title>
+    <!--<link href="../css/Index.css" rel="stylesheet" />-->
+    <link href="../css/Paginatipus.css" rel="stylesheet" />
+    <script src="../js/files/funciones.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>APUNTS CURS APLICACIONS WEB</h1>
+            <p>Raimon Carbonell,</p>
+            <p>Albert Batlle,</p>
+            <p>Xavi Toyos,</p>
+            <p>Francesc Vargas</p>
+            <div id="logo"> <img src="../img/html.png" alt="HTML" class="logos"> <img src="../img/CSS3.png" alt="CCS" class="logos"> <img src="../img/js.png" alt="JS" class="logos"> <img src="../img/UI-UX-BlueGreen2.png" alt="Usabilitat" class="logos"> </div>
+        </header>
+        <nav id="menuV">
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <p>Tornar</p><img src="../img/tornar.jpg" class="imamenu" alt="tornar"></a>
+                </li>
+                <li>
+                    <p>HTML</p> <img src="../img/html.png" class="imamenu" alt="HTML">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="html1.html">Introducció</a></li>
+                            <li><a href="html2.html">Head i body</a></li>
+                            <li><a href="html3.html">Paràgrafs i canvis de línea</a></li>
+                            <li><a href="html4.html">Títols</a></li>
+                            <li><a href="html5.html">div i span</a></li>
+                            <li><a href="html6.html">Elements que donen format al text</a></li>
+                            <li><a href="html7.html">Elements estructurals</a></li>
+                            <li><a href="html8.html">Llistes</a></li>
+                            <li><a href="html9.html">Taules</a></li>
+                            <li><a href="html10.html">Enllaços</a></li>
+                            <li><a href="html11.html">Imatges</a></li>
+                            <li><a href="html12.html">Formularis</a></li>
+                            <li><a href="html13.html">Vídeo</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>CCS</p> <img src="../img/CSS3.png" class="imamenu" alt="CSS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="css1.html">Introducció</a></li>
+                            <li><a href="css2.html">Declaracions més utilitzades</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>JS</p> <img src="../img/js.png" class="imamenu" alt="JS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="JAVASCRIPT.html">Introducció</a></li>
+                            <li><a href="FInforUsuari.html">Funcions per donar informació a l'usuari</a></li>
+                            <li><a href="Fprompt.html">Funcions per obtenir dades</a></li>
+                            <li><a href="TiposDatos_Variables.html">Tipus de dades i variables</a></li>
+                            <li><a href="Operadors.html">Operadors: aritmètics, lògics, assignació i relacionals</a></li>
+                            <li><a href="ifElse.html">Estructures condicionals</a></li>
+                            <li><a href="while_for.html">Estructures iteratives</a></li>
+                            <li><a href="funcions.html">Funcions</a></li>
+                            <li><a href="Events.html">Esdeveniments</a></li>
+                            <li><a href="AccesAelementsDelDocument.html">Accés a elements del document</a></li>
+                            <li><a href="Canvas.html">Canvas</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>UI/UX </p> <img src="../img/UI-UX-BlueGreen2.png" class="imamenu" alt="UIUX">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="usabilitat.html">Usabilitat</a></li>
+                            <li><a href="accessibilitat.html">Accessibilitat</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>ACCÉS A ELEMENTS DE DOCUMENTS (DOM)</h2>
+            <p>El model de objectes de DOM es una interfície (connexió entre el codi HTML i el codi de programació )per poder accedir i modificar tant en estructura i el estil els codi HTML de la pagina web. Permet connectar el codi HTML amb el llenguatge de programació. Permetre detectar ,actuar i actuar sobre el codi HTML.</p>
+            <h3>Control del temps de crida a funcions</h3>
+            <p> El mètode setInterval es un mètode que permet cridar o evaluar una expressió en un intervals especificats (en mil·lisegons). El mètode setInterval() continuarà les crides a la funció fins que s’executi la clearInterval() Per executar una funció només una vegada, després d'un número especificat de mil·lisegons, ús el setTimeout() mètode. </p>
+            <p>Prem el boto d'Inici per mostra la paraula "hola " ,per pausa per pausar l'efecte</p>
+            <button onclick="Inici()">Inici</button>
+            <button onclick="Para()">Pausa</button>
+            <p id="res" class="quadretext2"></p>
+            <h3>ACCÉS ALS ELEMENTS HTML</h3>
+            <p>En aquest part aplicarem un estin als diferents parrafs que conte l'exemple , per tal de fer-ho accedirem al id de cada un dels parrafs per tal d'aplicar un estil sobre aquets . Utizant querySelectorAll sobre les parrafs de la clase estil.</p>
+            <button onclick="ColorFonsP()">Canviar color paràgraf </button>
+            <br>
+            <div class="quadretext2">
+                <br>
+                <p>L’ÀNIMA DE LES FLORS
+                    <p>
+                        <p class="estil">Aquelles dues flors que hi ha posades al mig del caminal, qui és que les hi deu haver llençades? Qui sia, tant si val.</p>
+                        <p>Aquelles dues flors no estan pas tristes, no, no: riuen al sol. M’han encantat així que les he vistes posades a morir, mes sense dol.</p>
+                        <p class="estil">“Morirem aviat, lluny de la planta -elles deuen pensar-; mes ara nostre brill el poeta encanta, i això mai morirà.”</p>
+                        <p>Joan Maragall.</p>
+            </div>
+            <p> <a href="../js/files/EXAccesAelementsDelDocument.html" download="Acces a elements del document">Descarrega el codi</a></p>
+            <a href="Events.html" class="enrere" title="ESDEVENIMENTS"><img src=../img/flechaIzda1.gif alt="ESDEVENIMENTS"></a>
+            <a href="Canvas.html" class="endevant" title="Canvas"><img src="../img/flechaDcha1.gif" alt="flechaDcha1"></a>
+        </main>
+        <footer>
+            <p>Albert Batlle
+                <br><a href="mailto:albert.batlle@gmail.com" target="_blank">albert.batlle@gmail.com</a></p>
+            <p>Raimon Carbonell
+                <br><a href="mailto:raimon12@gmail.com" target="_blank">raimon12@gmail.com</a></p>
+            <p>Xavi Toyos
+                <br><a href="mailto:xavi.toyos@gmail.com" target="_blank">xavi.toyos@gmail.com</a></p>
+            <p>Francesc Vargas
+                <br><a href="mailto:fravase76@gmail.com" target="_blank">fravase76@gmail.com</a></p>
+            <br>
+            <p>© Barcelona, 2016</p>
+        </footer>
+    </div>
+</body>
+
+</html>

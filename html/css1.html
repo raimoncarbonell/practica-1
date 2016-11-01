@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Apunts curs ACTIVITY desenvolupament web</title>
+    <link rel="stylesheet" href="../css/Paginatipus.css"> </head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>APUNTS CURS APLICACIONS WEB</h1>
+            <p>Raimon Carbonell,</p>
+            <p>Albert Batlle,</p>
+            <p>Xavi Toyos,</p>
+            <p>Francesc Vargas</p>
+            <div id="logo"><img src="../img/html.png" alt="HTML" class="logos"> <img src="../img/CSS3.png" alt="CCS" class="logos"> <img src="../img/js.png" alt="JS" class="logos"> <img src="../img/UI-UX-BlueGreen2.png" alt="Usabilitat" class="logos"></div>
+        </header>
+        <nav id="menuV">
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <p>Tornar</p><img src="../img/tornar.jpg" class="imamenu" alt="tornar"></a>
+                </li>
+                <li>
+                    <p>HTML</p> <img src="../img/html.png" class="imamenu" alt="HTML">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="html1.html">Introducció</a></li>
+                            <li><a href="html2.html">Head i body</a></li>
+                            <li><a href="html3.html">Paràgrafs i canvis de línea</a></li>
+                            <li><a href="html4.html">Títols</a></li>
+                            <li><a href="html5.html">div i span</a></li>
+                            <li><a href="html6.html">Elements que donen format al text</a></li>
+                            <li><a href="html7.html">Elements estructurals</a></li>
+                            <li><a href="html8.html">Llistes</a></li>
+                            <li><a href="html9.html">Taules</a></li>
+                            <li><a href="html10.html">Enllaços</a></li>
+                            <li><a href="html11.html">Imatges</a></li>
+                            <li><a href="html12.html">Formularis</a></li>
+                            <li><a href="html13.html">Vídeo</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>CCS</p> <img src="../img/CSS3.png" class="imamenu" alt="CSS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="css1.html">Introducció</a></li>
+                            <li><a href="css2.html">Declaracions més utilitzades</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>JS</p> <img src="../img/js.png" class="imamenu" alt="JS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="JAVASCRIPT.html">Introducció</a></li>
+                            <li><a href="FInforUsuari.html">Funcions per donar informació a l'usuari</a></li>
+                            <li><a href="Fprompt.html">Funcions per obtenir dades</a></li>
+                            <li><a href="TiposDatos_Variables.html">Tipus de dades i variables</a></li>
+                            <li><a href="Operadors.html">Operadors: aritmètics, lògics, assignació i relacionals</a></li>
+                            <li><a href="ifElse.html">Estructures condicionals</a></li>
+                            <li><a href="while_for.html">Estructures iteratives</a></li>
+                            <li><a href="funcions.html">Funcions</a></li>
+                            <li><a href="Events.html">Esdeveniments</a></li>
+                            <li><a href="Acces%20a%20elements%20del%20document.html">Accés a elements del document</a></li>
+                            <li><a href="Canvas.html">Canvas</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>UI/UX </p> <img src="../img/UI-UX-BlueGreen2.png" class="imamenu" alt="UIUX">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="usabilitat.html">Usabilitat</a></li>
+                            <li><a href="accessibilitat.html">Accessibilitat</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>CSS</h2>
+            <p>CSS significa "Cascading Style Sheets" o el que és el mateix Fulls d'Estil en Cascada. És un llenguatge de fulls d'estil utilitzat per descriure la semàntica de presentació (l'aspecte i format) d'un document escrit en un llenguatge de marques. La seva aplicació més comuna és dissenyar pàgines web escrites en HTML i XHTML, però el llenguatge també pot ser aplicat a qualsevol classe de document XML, incloent-hi SVG i XUL.</p>
+            <p>Per saber més pots visitar <a href="https://ca.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" title="Pàgina wikipedia CSS">aquesta web</a>.</p>
+            <p>Els estils en CSS es poden utilitzar dins d'una pàgina HTML o en un fitxer a part:</p>
+            <ul>
+                <li>En cas d'utilitzar CSS dins d'una mateixa pàgina HTMl haurem d'escriure el codi a la capçalera de la mateixa pàgina HTML, dins de les etiquetes &lt;head&gt;&lt;/head&gt;. En aquest cas escriurem les eiquetes &lt;style&gt; &lt;/style&gt; i l'estil dins d'aquestes etiquetes.</li>
+                <li>Es pot utilitzar un arxiu diferent per fer el full d'estils. En aquest cas crearem un arxiu amb l'extensió CSS i el cridarem desde HTML entre les etiquetes &lt;head&gt;&lt;/head&gt; amb el següent codi, essent "estil-web.css" l'arxiu CSS amb els estils d'aquesta pàgina HTML.</li>
+            </ul>
+            <p class="quadre">&lt;link rel="stylesheet" href="estil-web.css"&gt;</p>
+            <p>Una regla CSS está formada sempre per dues parts, els selectors i la declaració:</p>
+            <dl> <dt>Els selectors</dt>
+                <dd>Indica a quí s'ha d'executar la declaració</dd> <dt>La declaració</dt>
+                <dd>Indica qué s'ha de fer i sempre es troba entre claus({}). Cada declaració ha d'estar separada per un punt i coma (;)</dd>
+            </dl>
+            <figure> <img id="imagecss" src="../img/css-rule.png"  alt="Estructura CSS">
+                <figcaption> Imatge obtinguda de http://www.sccc.premiumdw.com/ </figcaption>
+            </figure>
+            <a href="css12.html" class="endevant" title="CSS: els selectors"><img src="../img/flechaDcha1.gif" alt="flecha dreta"></a>
+        </main>
+        <footer>
+            <p>Albert Batlle
+                <br> <a href="mailto:albert.batlle@gmail.com" target="_blank">albert.batlle@gmail.com</a></p>
+            <p>Raimon Carbonell
+                <br><a href="mailto:raimon12@gmail.com" target="_blank">raimon12@gmail.com</a></p>
+            <p>Xavi Toyos
+                <br><a href="mailto:xavi.toyos@gmail.com" target="_blank">xavi.toyos@gmail.com</a></p>
+            <p>Francesc Vargas
+                <br><a href="mailto:fravase76@gmail.com" target="_blank">fravase76@gmail.com</a></p>
+            <br>
+            <p>© Barcelona, 2016</p>
+        </footer>
+    </div>
+</body>
+
+</html>

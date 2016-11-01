@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>JavaScript - Apunts Curs Aplicacions web</title>
+    <!--<link href="../css/Index.css" rel="stylesheet" />-->
+    <link href="../css/Paginatipus.css" rel="stylesheet" />
+    <script src="../js/files/funciones.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>APUNTS CURS APLICACIONS WEB</h1>
+            <p>Raimon Carbonell,</p>
+            <p>Albert Batlle,</p>
+            <p>Xavi Toyos,</p>
+            <p>Francesc Vargas</p>
+            <div id="logo"><img src="../img/html.png" alt="HTML" class="logos"> <img src="../img/CSS3.png" alt="CCS" class="logos"> <img src="../img/js.png" alt="JS" class="logos"> <img src="../img/UI-UX-BlueGreen2.png" alt="Usabilitat" class="logos"></div>
+        </header>
+        <nav id="menuV">
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <p>Tornar</p><img src="../img/tornar.jpg" class="imamenu" alt="tornar"></a>
+                </li>
+                <li>
+                    <p>HTML</p> <img src="../img/html.png" class="imamenu" alt="HTML">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="html1.html">Introducció</a></li>
+                            <li><a href="html2.html">Head i body</a></li>
+                            <li><a href="html3.html">Paràgrafs i canvis de línea</a></li>
+                            <li><a href="html4.html">Títols</a></li>
+                            <li><a href="html5.html">div i span</a></li>
+                            <li><a href="html6.html">Elements que donen format al text</a></li>
+                            <li><a href="html7.html">Elements estructurals</a></li>
+                            <li><a href="html8.html">Llistes</a></li>
+                            <li><a href="html9.html">Taules</a></li>
+                            <li><a href="html10.html">Enllaços</a></li>
+                            <li><a href="html11.html">Imatges</a></li>
+                            <li><a href="html12.html">Formularis</a></li>
+                            <li><a href="html13.html">Vídeo</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>CCS</p> <img src="../img/CSS3.png" class="imamenu" alt="CSS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="css1.html">Introducció</a></li>
+                            <li><a href="css2.html">Declaracions més utilitzades</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>JS</p> <img src="../img/js.png" class="imamenu" alt="JS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="JAVASCRIPT.html">Introducció</a></li>
+                            <li><a href="FInforUsuari.html">Funcions per donar informació a l'usuari</a></li>
+                            <li><a href="Fprompt.html">Funcions per obtenir dades</a></li>
+                            <li><a href="TiposDatos_Variables.html">Tipus de dades i variables</a></li>
+                            <li><a href="Operadors.html">Operadors: aritmètics, lògics, assignació i relacionals</a></li>
+                            <li><a href="ifElse.html">Estructures condicionals</a></li>
+                            <li><a href="while_for.html">Estructures iteratives</a></li>
+                            <li><a href="funcions.html">Funcions</a></li>
+                            <li><a href="Events.html">Esdeveniments</a></li>
+                            <li><a href="AccesAelementsDelDocument.html">Accés a elements del document</a></li>
+                            <li><a href="Canvas.html">Canvas</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>UI/UX </p> <img src="../img/UI-UX-BlueGreen2.png" class="imamenu" alt="UIUX">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="usabilitat.html">Usabilitat</a></li>
+                            <li><a href="accessibilitat.html">Accessibilitat</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>ARRAYS</h2>
+            <p>Aquesta estructura de dades és molt util ja que permet recórrer utilitzant bucles aquesta estructura de dades de forma ordenada per consultar o modificar les dades que contenen. En Javascript a diferència d'un altre llenguatges de programació no és necessari indicar el nombre de posicions a la seva declaració </p>
+            <p> Una de la funcions més útil de array és el nom del array.length aquesta funció no retorna un numero enter amb el nombre de posicions de array</p>
+            <p>Un array és un objecte de Javascript ,la seva estructura és similar a una taula,permet guardar dades de forma ordenada referenciats per la posició que ocupen aquestes dades o per un identificador de posició</p>
+            <p>Aquests array poden ser d'una sola dimensió o de múltiples dimensions , per comprendre millor l'exemple podem pensar en una estructura de taula amb files i columnes</p>
+            <p>Exemple d'inicializacio d'array</p>
+            <div class="quadretext2"> <pre>
+    
+    var tabla = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+            ];
+    </pre> </div>
+            <p>Exemple per mostar valor en una taula</p>
+            <div class="quadretext2"> <pre>
+    <script>
+    MostrarValoresTabla();
+    </script>
+    <br>
+    <script>
+    sumaValorFilas();
+  </script>
+  </pre> </div>
+            <p> <a href="../js/files/EXarrays.html" download="Exarrays">descarrega el codi</a></p>
+            <a href="AccesAelementsDelDocument.html" class="enrere" title="ACCÉS A ELEMENTS DE DOCUMENTS (DOM)"><img src=../img/flechaIzda1.gif alt="ACCÉS A ELEMENTS DE DOCUMENTS (DOM)"></a>
+        </main>
+        <footer>
+            <p>Albert Batlle
+                <br><a href="mailto:albert.batlle@gmail.com" target="_blank">albert.batlle@gmail.com</a></p>
+            <p>Raimon Carbonell
+                <br><a href="mailto:raimon12@gmail.com" target="_blank">raimon12@gmail.com</a></p>
+            <p>Xavi Toyos
+                <br><a href="mailto:xavi.toyos@gmail.com" target="_blank">xavi.toyos@gmail.com</a></p>
+            <p>Francesc Vargas
+                <br><a href="mailto:fravase76@gmail.com" target="_blank">fravase76@gmail.com</a></p>
+            <br>
+            <h6>© Barcelona, 2016</h6> </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>ejemplos animacion</title>
+        <meta charset="utf-8">
+        <style>
+            #anima{
+                width: 400px;
+                height: 50px;
+                background-color: cornflowerblue;
+                margin: auto;
+                position: relative;
+            }
+        
+            #anima h1{
+                text-align: center;
+                color: white;
+                position: relative;
+                animation: txt 3s;
+            }
+            
+            #anima #bola{
+                width: 25px;
+                height: 25px;
+                background-color: black;
+                border-radius: 50%;
+                position: absolute;
+                top: 10px;
+                animation: pelota 2s infinite alternate;
+            }
+            
+            @keyframes txt{
+                0%{
+                    bottom: -50px;
+                    color: transparent;
+                }
+                30%{
+                    color: transparent;
+                }
+                70%{
+                    color: orange;
+                }
+                100%{
+                    bottom: 0px;
+                    color:white;
+                }
+            }
+            @keyframes pelota{
+                0%{
+                    left: 0;
+                    top:10px;
+                    background-color: black;
+                }
+                30%{
+                    top:25px;
+                    background-color: orangered;
+                }
+                50%{
+                    top:10px;
+                    background-color: chartreuse;
+                }
+                70%{
+                    top: 25px;
+                    background-color: red;
+                }
+                100%{
+                    left:375px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="anima">
+        <h1>hola</h1>
+        <div id="bola"></div>
+        </div>
+        
+        
+        
+        
+        <script>
+        
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>HTML - Apunts Curs Aplicacions web</title>
+    <!--<link href="../css/Index.css" rel="stylesheet" />-->
+    <link href="../css/Paginatipus.css" rel="stylesheet" />
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script src="../js/files/funciones.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>APUNTS CURS APLICACIONS WEB</h1>
+            <p>Raimon Carbonell,</p>
+            <p>Albert Batlle,</p>
+            <p>Xavi Toyos,</p>
+            <p>Francesc Vargas</p>
+            <div id="logo"> <img src="../img/html.png" alt="HTML" class="logos"> <img src="../img/CSS3.png" alt="CCS" class="logos"> <img src="../img/js.png" alt="JS" class="logos"> <img src="../img/UI-UX-BlueGreen2.png" alt="Usabilitat" class="logos"> </div>
+        </header>
+        <nav id="menuV">
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <p>Tornar</p><img src="../img/tornar.jpg" class="imamenu" alt="tornar"></a>
+                </li>
+                <li>
+                    <p>HTML</p> <img src="../img/html.png" class="imamenu" alt="HTML">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="html1.html">Introducció</a></li>
+                            <li><a href="html2.html">Head i body</a></li>
+                            <li><a href="html3.html">Paràgrafs i canvis de línea</a></li>
+                            <li><a href="html4.html">Títols</a></li>
+                            <li><a href="html5.html">div i span</a></li>
+                            <li><a href="html6.html">Elements que donen format al text</a></li>
+                            <li><a href="html7.html">Elements estructurals</a></li>
+                            <li><a href="html8.html">Llistes</a></li>
+                            <li><a href="html9.html">Taules</a></li>
+                            <li><a href="html10.html">Enllaços</a></li>
+                            <li><a href="html11.html">Imatges</a></li>
+                            <li><a href="html12.html">Formularis</a></li>
+                            <li><a href="html13.html">Vídeo</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>CCS</p> <img src="../img/CSS3.png" class="imamenu" alt="CSS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="css1.html">Introducció</a></li>
+                            <li><a href="css2.html">Declaracions més utilitzades</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>JS</p> <img src="../img/js.png" class="imamenu" alt="JS">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="JAVASCRIPT.html">Introducció</a></li>
+                            <li><a href="FInforUsuari.html">Funcions per donar informació a l'usuari</a></li>
+                            <li><a href="Fprompt.html">Funcions per obtenir dades</a></li>
+                            <li><a href="TiposDatos_Variables.html">Tipus de dades i variables</a></li>
+                            <li><a href="Operadors.html">Operadors: aritmètics, lògics, assignació i relacionals</a></li>
+                            <li><a href="ifElse.html">Estructures condicionals</a></li>
+                            <li><a href="while_for.html">Estructures iteratives</a></li>
+                            <li><a href="funcions.html">Funcions</a></li>
+                            <li><a href="Events.html">Esdeveniments</a></li>
+                            <li><a href="AccesAelementsDelDocument.html">Accés a elements del document</a></li>
+                            <li><a href="Canvas.html">Canvas</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <p>UI/UX </p> <img src="../img/UI-UX-BlueGreen2.png" class="imamenu" alt="UIUX">
+                    <div class="indicehtml">
+                        <ol>
+                            <li><a href="usabilitat.html">Usabilitat</a></li>
+                            <li><a href="accessibilitat.html">Accessibilitat</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h2>TIPUS DE DADES I VARIABLES</h2>
+            <p>Una variable es declara amb la paraula clau var. Exemple var numero.En la declaració no figura què tipus de variable és (per exemple si és text tipus String o si és numèrica tipus Number). Javascript detecta que conté un valor numèric, la considerarà tipus Number. Si conté un valor de tipus text la considerarà String. Si conté true o false la considerarà booleana.</p>
+            <p>El nom d'una variable haurà d'estar format per lletres, nombres, guions baixos o símbols dòlar ($),</p>
+            <p>Una variable s'inicialitza quan s'estableix el seu contingut o valor per primera vegada.
+                <p>
+                    <p>Una variable es pot declarar i inicialitzar al mateix temps. Per exemple podríem escriure var num = 30; amb el que la variable ha estat declarada i inicialitzada en una mateixa línia.</p>
+                    <p>Javascript distingeix entre majúscules i minúscules .</p>
+                    <p>Javascript no requereix declaració del tipus de les variables, i fins i tot permet que una variable emmagatzemi contingut de diferents tipus en diferents moments. Per exemple podríem usar mun = 30; i en un lloc posterior escriure mun = 'es menor'
+                        <p>
+                            <table id="variables" >
+                                <tbody>
+                                    <tr>
+                                        <td> &nbsp;</td>
+                                        <td> <strong>NOM</strong> </td>
+                                        <td> <strong>DESCRIPCIO</strong> </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5"> <strong>TIPUS PRIMITIUS</strong> </td>
+                                        <td> String </td>
+                                        <td> Cadena de text </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Number </td>
+                                        <td> Valores numerics </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Boolean </td>
+                                        <td> true ó false </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Null </td>
+                                        <td> Tipus especial, conte null </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Undefined </td>
+                                        <td> Tipus especial, conte undefined </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6"> <strong>TIPUS D'OBJECTE</strong> </td>
+                                        <td> tipus predefints de JavaScript </td>
+                                        <td> Date (data) RegExp (expresions regulars) Error (dades d'error) </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Tipus definit per el programador / usuari </td>
+                                        <td> Funcions simples Clases </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Arrays </td>
+                                        <td> Sèrie d'elements o formació tipus vector o matriu. Ho considerarem un objecte especial que manca de mètodes. </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3"> Objectes especials </td>
+                                        <td> Objecte global </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Objecte prototip </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Altres </td>
+                                    </tr>
+                                </tbody>
+                            </table> <cite> Taula extreta de aprenderaprogramar.com  </cite>
+                            <p>Es poden realitzar conversion de variables , exemples : Conversio d'un nombre de decimal ha enter</p>
+                            <form>
+                                <fieldset>
+                                    <label>Entra un numero decimal</label>
+                                    <input type="number" id="num">
+                                    <label>Numero enter</label>
+                                    <input type="number" id="res">
+                                    <input type="button" value="Comprobar" onclick="ParseInt()"> </fieldset>
+                            </form>
+                            <p><a href="../js/files/ExTiposDatos_Variables.html" download="pasar a enter" title="Suma de nombres">Descarregar l'exemple</a></p>
+                            <a href="Fprompt.html" class="enrere" title="FUNCIONS PER OBTENIR DADES (PROMPT)"><img src=../img/flechaIzda1.gif alt="FUNCIONS PER OBTENIR DADES (PROMPT)"></a>
+                            <a href="Operadors.html" class="endevant" title="Operadors"><img src="../img/flechaDcha1.gif" alt="Tipus de dades i variables"></a>
+        </main>
+        <footer>
+            <p>Albert Batlle
+                <br> <a href="mailto:albert.batlle@gmail.com" target="_blank">albert.batlle@gmail.com</a></p>
+            <p>Raimon Carbonell
+                <br><a href="mailto:raimon12@gmail.com" target="_blank">raimon12@gmail.com</a></p>
+            <p>Xavi Toyos
+                <br><a href="mailto:xavi.toyos@gmail.com" target="_blank">xavi.toyos@gmail.com</a></p>
+            <p>Francesc Vargas
+                <br><a href="mailto:fravase76@gmail.com" target="_blank">fravase76@gmail.com</a></p>
+            <br>
+            <p>© Barcelona, 2016</p>
+        </footer>
+    </div>
+</body>
+
+</html>

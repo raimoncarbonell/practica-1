@@ -1,0 +1,33 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Suma Nombres Enters </title>
+  </head>
+  <body>
+      
+      <script>
+function ParseInt()
+{
+    
+
+var num= document.getElementById("num").value;// recull el mun que entra l'usuari
+var r = document.getElementById("res");// mostra el resultat 
+   
+r.value= parseInt(num);  
+}
+      
+      </script>
+    <form>
+            <fieldset>
+            
+                <label>Entra un numero decimal</label> <input type="number" id="num">
+                <label>Numero enter</label> <input type="number" id="res">
+                <input type="button" valeu="Comprobar" onclick="ParseInt()">
+            </fieldset>
+    </form>
+
+  </body>
+</html>

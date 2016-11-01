@@ -1,0 +1,139 @@
+body
+{
+    text-align: center;
+    
+}
+
+#contenedor
+{
+    width: 70%;
+    margin: auto;
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    min-width: 340px; /*  ---  15/6 ---- */
+  
+}
+
+header
+{
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 20px yellow;
+}
+
+
+header h1
+{
+    margin-bottom: 0;
+    padding-top: 10px; /*  ---  15/6 ---- */
+}
+
+header p
+{
+    display: inline;
+    font-size: 15px;
+    color:black;
+}
+
+h6
+{
+    display: inline;
+}
+
+
+#logo
+{
+    padding: 10px;
+}
+.logos
+{
+    display: inline;
+    height: 45px;
+    margin: 5px 10px;
+}
+
+
+/*  ---------------  MAIN  ---------   */
+
+main
+{
+    
+    background-image: url(../img/codigos.jpg);
+    background-size: cover;
+    
+}
+
+
+
+
+.botoindex
+{
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: 1s;
+    display: inline-block;
+}
+
+
+.botoindex:hover
+{
+    transform: rotateY(360deg);
+    background-color:darkcyan;
+}
+
+.imatgeboto
+{
+    width: 100%;
+    height: 180px;
+}
+
+
+/* ----------------------  footer -----------------  */
+
+footer{
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    width: 100%;
+    clear: both;
+    box-shadow: inset 0 0 20px yellow;
+}
+
+footer h5{
+    display: inline-block;
+ /*   width: 20%;   ----------   15-6  -----  */
+}
+
+
+footer p
+{
+    display: inline-block;
+    font-weight: bold;
+ 
+}
+
+
+footer a
+{
+    color: black;
+}
+
+
+
+
+
+/* ---------  mediaqueries --------------*/
+
+
+
+@media (max-width:1010px)
+{
+    footer p
+    {
+        display: block;
+        margin: auto;
+        padding: 5px;  /* -- 15-6 -- */
+        
+    }
+}

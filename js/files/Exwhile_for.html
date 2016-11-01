@@ -1,0 +1,42 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Nombres parells </title>
+  </head>
+  <body>
+      
+      <script>
+
+ function BParellsF ()
+               {
+                   
+                    var num = document.getElementById("num2").value;// recull el mun que entra l'usuari
+                    var r = document.getElementById("res2");// mostra el resultat 
+                   r.value="";
+                   var aux="";
+                  for(var i=0;i<=num;i++)
+                        {
+                        if(i%2==0){ aux += i+","; }// guarda en la variable i els numeros parells 
+                        
+                        }
+                   r.value=aux;// mostra els numeros parells 
+               }
+    
+      </script>
+    <form>
+        
+                  <fieldset>
+            <legend>Busca els numeros parells entre 0 i el numero definit per l'usuari Ex: fet amb for</legend>
+                <label>numero</label> <input type="number" id="num2">
+                <label>Resultat</label> <input type="text" id="res2">
+                      
+                <input type="button" valeu="Comprobar" onclick="BParellsF();">
+                
+                      </fieldset>
+             </form>
+
+  </body>
+</html>

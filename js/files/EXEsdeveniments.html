@@ -1,0 +1,28 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Nombres parells </title>
+  </head>
+  <body>
+      
+      <script>
+
+function DataActual()
+{
+    var f = new Date();
+      var r = document.getElementById("res");// mostra el resultat 
+var data=(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+   r.value=data;
+  
+}
+    
+      </script>
+    <form>
+        <label>Data actual</label> <input type="text" id="res">
+           <input type="button" onclick="DataActual();" value="Data actual">
+        </form>
+  </body>
+</html>

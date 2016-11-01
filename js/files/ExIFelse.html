@@ -1,0 +1,43 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Suma Nombres Enters </title>
+  </head>
+  <body>
+      
+      <script>
+function validarEdat()
+               {
+                   var fecha = new Date();
+                   var ano = fecha.getFullYear(); // guarda el valor añy actual en any
+                    var any = document.getElementById("any").value;// recull el any que entra l'usuari
+                   var r = document.getElementById("res");// mostra el resultat 
+                   var resta=ano-any; // fa la resta entre en any actual i la data de naixement
+                   
+                   if(resta>=18) // condicio que comproba si esta es major i igual a 18.
+                   {
+                       // Mostra que es menor d'edat
+                       r.value = " tens "+resta+" anys es Major d'edat";
+                   }
+                   else
+                    {
+                        // Mostra que es major d'edat
+                            r.value = " tens"+resta+"anys es Menor d'edat";
+                    }
+               }
+      
+      </script>
+     <form>
+                  <fieldset>
+            <legend>Es major d'edat?</legend>
+                <label>any de naixement</label> <input type="number" id="any">
+                <label>Resultat</label> <input type="text" id="res">
+                <input type="button" valeu="Comprobar" onclick="validarEdat();">
+                      </fieldset>
+             </form>
+
+  </body>
+</html>

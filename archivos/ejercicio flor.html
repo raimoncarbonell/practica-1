@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>ejercicio flor</title>
+        <meta charset="utf-8">
+        <style>
+            #contenedor{
+                perspective: 1000px;
+            }
+            #caja{
+                width: 400px;
+                height: 600px;
+                background-image: url(../img/rosa.jpg);
+                background-position: center;
+                background-size: cover;
+                border-radius: 5%;
+                margin: auto;
+                transition: 1s;
+                color:yellow;
+                text-align: left;
+                padding: 30px;
+                font-size: 30px;
+                
+            
+            }
+            #caja:hover{
+                transform: rotateY(180deg);
+                
+            }
+            #text{
+                opacity:0;
+                transition: 1s;
+            }
+            #text:hover{
+                transform: rotateY(180deg);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+
+<div id="contenedor">
+<div id="caja"><div id="text">La Flor <hr>
+
+<p>La flor es la estructura reproductiva característica de las plantas llamadas espermatofitas o fanerógamas.<br></p>
+
+<p>La función de una flor es producir semillas a través de la reproducción sexual.<br></p>
+
+<p>Para las plantas, las semillas son la próxima generación, y sirven como el principal medio a través del cual las especies se perpetúan y se propagan. </p>
+    </div>
+</div>       
+</div>  
+    </body>
+</html>

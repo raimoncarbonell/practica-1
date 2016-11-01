@@ -1,0 +1,603 @@
+@font-face
+{
+    font-family:latian;
+    src:url("../fuentes/latian.ttf");
+}
+
+body
+{
+    text-align: center;
+    
+    
+}
+
+#contenedor
+{
+    width: 70%;
+    margin: auto;
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    min-width: 340px; /*  ---  15/6 ---- */
+  
+}
+
+/* ----------------------------------- HEADER  ------------------------  */
+
+header
+{
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 20px yellow;
+}
+
+
+header h1
+{
+    margin-bottom: 0;
+    padding-top: 10px; /*  ---  15/6 ---- */
+    
+    
+}
+
+
+header p
+{
+    display: inline;
+    font-size: 15px;
+    color:black;
+}
+
+
+#logo
+{
+    padding: 10px;
+}
+.logos
+{
+    display: inline;
+    height: 45px;
+    margin: 5px 10px;
+}
+
+
+
+/* ---------------------------  menu ---------------------------------  */
+
+#menuV         /* ----   clase principal del menu  ------ */
+{
+    float: left;
+    width: 20%;
+    
+} 
+
+
+
+#menuV ul 
+{
+    list-style: none;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+} 
+
+#menuV p
+{
+    padding: 0;
+    margin: 0;
+}
+
+  
+            
+#menuV li
+{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    display: block;
+    padding: 5px;
+    margin:1px;
+    border-bottom: 1px solid black;
+    
+    
+}
+#menuV li:hover
+{
+    box-shadow: inset 0 0 20px yellow;
+    
+    
+}
+            
+
+
+.imamenu
+{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* ----------------------------- Els index que apareixen al menu  ------------------------------  */
+
+.indicehtml  
+{
+    display: none;
+    background-color:gainsboro;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#menuV li:hover .indicehtml   /*  ----------  Apareix l'índex de cada tema al passar el ratolí ------ */
+{
+    display:block;
+    border: 1px solid gray;
+    
+    
+}
+
+
+#menuV ul ol  
+{
+    list-style:decimal;
+    padding: 5px 19px;
+    padding-left: 0;
+    margin-left: 5px;
+    text-align: left;
+} 
+
+#menuV ol a
+{
+    color:blueviolet;
+    background-color: transparent;
+    padding: 2px;
+    border: none;
+}
+
+#menuV  ol li
+
+{
+    text-align: left;
+    color: black;
+    display:block;
+    background-color: transparent;
+   
+    padding: 5px;
+    margin:1px;
+    border-bottom: none;
+}
+
+
+
+
+
+/*  ------------------------------------  main   ----------------------------------- */
+
+main
+{
+    background-color: darkgray;
+    background-image: url(../img/codigos.jpg);
+    background-size: cover;
+    float: left;
+    width: 80%;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+h2
+{
+    color:blueviolet;
+    font-size: 27px;
+}
+
+.quadre   /* ---------------------  requadre que simula pantalla amb codi  -------------  */
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 20px gray;
+    background-color:dimgray;
+    color:white;
+    width: 40%;
+    min-width: 200px;
+    padding: 10Px;
+    font-size: 12px;
+}
+
+.quadretext  /*  -----------------  requadre que simula sortida per pantalla  --------------   */
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 20px gray;
+    width: 40%;
+    min-width: 200px;
+    padding: 10Px;
+    font-size: 12px;
+    background-color: white;
+    float: right;
+}
+
+.quadretext2  /*  -----------------  requadre que simula sortida per pantalla  --------------   */
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 20px gray;
+    width: 40%;
+    min-width: 200px;
+    padding: 10Px;
+    font-size: 12px;
+    background-color: white;
+    
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+abbr
+{
+    color: cornflowerblue;
+}
+
+figcaption
+{
+    font-size: 14px;
+    color: brown;
+    font-weight: bold;
+}
+
+main ol li
+{
+    margin-bottom: 15px;
+}
+main ol
+{
+    margin-bottom: 45px;
+}
+
+q
+{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.enrere
+{
+    float: left;
+    clear: both;
+}
+
+.endevant
+{
+    float: right;
+}
+
+form legend
+{
+    width: 100%;
+}
+/* --------------------------------------  footer --------------------------------------  */
+
+footer
+{
+    background-image: url(../img/degradado.jpg);
+    background-size: cover;
+    width: 100%;
+    clear: both;
+    box-shadow: inset 0 0 20px yellow;
+}
+
+footer p
+{
+    display: inline-block;
+    font-weight: bold;
+ 
+}
+
+footer a
+{
+    color: black;
+}
+
+
+
+/* ---------------------------  mediaqueries ----------------------------------------*/
+
+
+
+@media (max-width:1010px)
+{
+    footer p
+    {
+        display: block;
+        margin: auto;
+        padding: 5px;  
+        
+    }
+    
+    #menuV li:hover .indicehtml   
+    {
+    position: absolute;  /* -------   si no ho posem al sortir l'index es fica sota el main ----- */
+    z-index: 999;       /*------- si no el posem l'índex queda per sota les imatges que apareixen al main ------- */
+    padding: 2px;
+    
+    }
+   
+    
+}
+
+@media (max-width:900px)
+{
+    .quadretext 
+    {
+        float: none;
+       
+    } 
+
+    .quadre  
+    {
+        float: none;
+       
+    } 
+   #MacbethP   
+    {
+        bottom: 600px;
+        margin-bottom: 20px;
+    }
+    #MacbethT
+    {
+        top: 750px;
+    }
+
+    #PlaP
+    {
+        bottom: 555px;
+        margin-bottom: 20px;
+    }
+    #PlaT
+    {
+        top: 555px;
+    }
+    #estructura-web
+    {
+        width: 100%;
+    }
+    #LlistaN
+    {
+        top:210px;
+    }
+    #LlistaNQ
+    {
+        bottom: 180px;
+        margin-bottom: 10px;
+    }
+    #LlistaO
+    {
+        top: 295px;
+    }
+    #LlistaOQ
+    {
+        bottom: 275px;
+        margin-bottom: 25px;
+    }
+    #QuadreT
+    {
+        top: 410px;
+    }
+    #QuadreP
+    {
+        bottom: 200px;
+        margin-bottom: 25px;
+    }
+    #FormT
+    {
+        top: 460px;
+    }
+    #FormP
+    {
+        bottom: 300px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:500px)
+{
+    main
+    {
+        
+        position: static;
+        width: 100%;
+    }
+    
+    #menuV
+    {
+        position: static;
+        width: 100%
+    }
+    
+    
+    
+    #menuV a
+    {
+        display: inline-block;
+        margin: 0;
+        border-right: 1px solid black;
+    }
+    
+    #menuV li
+    {
+        display: inline-block;
+        margin: 0;
+        
+    }
+    #menuV p
+    {
+        display: inline-block;
+    }
+    
+    .imamenu
+    {
+        height: 15px;
+        width: 14px;
+    }
+    
+    .indicehtml li
+    {
+        display: block;
+ 
+    }
+    
+   
+   
+}
+
+/*  ----------     USABILITAT    ------------------ */
+
+
+iframe
+{
+    width: 90%;
+}
+
+#imaaccessibilitat
+{
+    width: 100%;
+}
+#imausa
+{
+    width: 100%;
+}
+#videoacc
+{
+    width: 100%;
+}
+
+/* ---------     CSS ------------------  */
+
+
+#imagecss
+{
+    width: 70%;
+    height: 70%;
+}
+#imagecaixa
+{
+    width: 50%;
+    height: 50%;
+}
+
+.p1
+{
+    clear: both;
+}
+
+/* ---------     HTML ------------------  */
+#MacbethP,
+#MacbethT,
+#PlaT,
+#PlaP,
+#estructura-web,
+#LlistaO,
+#LlistaOQ,
+#LlistaN,
+#LlistaNQ,
+#QuadreT,
+#QuadreP,
+#Caligula-foto,
+#FormP,
+#FormT
+{
+    position: relative;
+}
+#estructura-web,
+#Caligula-foto,
+#marc
+{
+    width: 100%;
+}
+
+#ph1
+{
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#ph2
+{
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#ph3
+{
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#ph4
+{
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#ph5
+{
+    display: block;
+    font-size: 0.83em;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#ph6
+{
+    display: block;
+    font-size: 0.67em;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
+/*  ------------------------    JAVASCRIPT  --------------------------  */
+
+#variables
+{
+    width: 100%;
+    font-size: 12px;
+}
+
+.quadre2   /* ---------------------  requadre que simula pantalla amb codi amb ample 90%  -------------  */
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 20px gray;
+    background-color:dimgray;
+    color:white;
+    width: 90%;
+    min-width: 200px;
+    padding: 10Px;
+    font-size: 12px;
+}
+table,
+tr,
+td
+{
+    border: solid 1px;
+    border-collapse: collapse;
+}

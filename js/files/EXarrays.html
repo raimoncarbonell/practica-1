@@ -1,0 +1,74 @@
+<!DOCTYPE HTML> 
+
+      
+    <html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Nombres parells </title>
+  </head>
+  <body>
+      
+      <script>
+         function MostrarValoresTabla()
+{
+    
+
+    var tabla = [
+                [1,2,3,4],
+                [5,6,7,8],
+                [9,10,11,12]
+            ];
+    
+            document.write("<table border='1'>");
+            for(var i=0; i<tabla.length; i++){
+                document.write("<tr>");
+                for(var j=0; j<tabla[i].length; j++){
+                    document.write("<td>"+tabla[i][j]+"</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>")
+}
+          
+          function sumaValorFilas()
+{
+     var tabla = [
+                [1,2,3,4],
+                [5,6,7,8],
+                [9,10,11,12]
+            ];
+    
+    for ( var i=0;i<tabla.length;i++)
+        {
+            var suma=0;
+            var num=0;
+            for ( var j=0 ; j<tabla[i].length;j++)
+                {
+                    num=tabla[i][j];
+                    suma=suma+num
+                    
+                }
+            document.write ("suma  fila "+i+" "+suma+"<br>" );
+        }
+}
+    
+      </script>
+      
+    
+    <p>Exemple per mostar valor en una taula</p>
+    <div class="quadretext" >
+    <pre>
+    <script>
+    MostrarValoresTabla();
+    </script>
+    <br>
+    <script>
+    sumaValorFilas();
+  </script>
+  </pre>
+    </div>
+
+
+  
+  </body>
+</html>
